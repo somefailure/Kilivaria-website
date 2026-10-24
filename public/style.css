@@ -65,6 +65,10 @@ p {
   text-shadow: none;
   color: #353535;
   margin-bottom: -4pt;
+  margin-left: 4px;
+  margin-right: 4px;
+  text-align: left;
+  text-wrap-style: pretty;
 }
 
 
