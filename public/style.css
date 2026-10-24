@@ -15,23 +15,23 @@ body {
 h1 {
   color: #ffffff;
   text-align: center;
-  font-size: 18pt;
+  font-size: 24px;
   margin: 0;
   margin-top: 4px;
   font-family: 'Minecraftia';
   font-weight: 100;
-  text-shadow: 2.2pt 2.2pt #000000aa;
+  text-shadow: 2.2px 2.2px #000000aa;
 }
 
 p {
   color: #ffffff;
   text-align: center;
-  font-size: 12pt;
+  font-size: 16px;
   margin: 0;
   margin-top: 4px;
   font-family: 'Minecraftia';
   font-weight: 100;
-  text-shadow: 1.5pt 1.5pt #000000aa;
+  text-shadow: 1px 1x #000000aa;
 }
 
 
@@ -59,17 +59,44 @@ p {
 .mc-ui h1 {
   text-shadow: none;
   color: #353535;
-  margin-bottom: -10pt;
+  margin-bottom: -14px;
 }
 .mc-ui p {
   text-shadow: none;
   color: #353535;
-  margin-bottom: -4pt;
+  margin-bottom: -6px;
   margin-left: 4px;
   margin-right: 4px;
   text-align: left;
   text-wrap-style: pretty;
 }
+
+.mc-icon-container {
+  display: flex;
+  justify-content: center;
+}
+
+.mc-icon {
+  border-image: url(images/assets/ui/mc-btn.png) 4 4 7 4 fill / 4px 4px 7px 4px;
+  image-rendering: crisp-edges;
+  padding: 4px 4px 7px 4px;
+  margin: 4px;
+  height: 40px;
+  width: 40px;
+}
+
+.mc-icon img{
+  height: 50px; margin-left: -5px; margin-top: -4px;
+}
+
+.mc-icon:hover {
+  border-image: url(images/assets/ui/mc-btn-active.png) 4 4 7 4 fill / 4px 4px 7px 4px;
+}
+
+.mc-icon:hover img{
+  filter: brightness(1.1);
+}
+
 
 
 .mc-btn {
@@ -77,7 +104,7 @@ p {
   image-rendering: crisp-edges;
   padding: 4px 4px 7px 4px;
   margin: 4px;
-  height: 32pt;
+  height: 40px;
 
 }
 
@@ -106,6 +133,6 @@ p {
 }
 
 @keyframes bgBlur {
-  0% {filter: blur(10pt) brightness(0.6)}
-  100% {filter: blur(0pt) brightness(0.6);}
+  0% {filter: blur(10px) brightness(0.6)}
+  100% {filter: blur(0px) brightness(0.6);}
 }
